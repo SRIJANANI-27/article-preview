@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  body {
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Manrope", sans-serif;
+  }
+  .card-img-left{
+    /* max-width: 100%; */
+    width: 300px;
+    border-radius: 10px 0px 0px 10px;
+  }
+  h4{
+    font-weight: 800;
+  }
+  .card-body{
+    padding: 25px;
+    
+    
+  }
+  
+  .para{
+    color: hsl(212, 23%, 69%);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 13px;
+  }
+  .msg span{
+    font-weight: 700;
+    
+  }
+  .msg p{
+    color: hsl(212, 23%, 69%);
+  }
+  .msg{
+    margin-top: 4px;
+  }
+  
+  .msg-share-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  
+  .descrip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  .avatar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.descrip {
+    display: flex;
+    align-items: center;
+}
+
+.avimg img{
+    margin-right: 10px; 
+    border-radius: 50%;
+}
+
+.avtitle span {
+    font-weight: 800;
+    color: hsl(217, 19%, 35%);
+}
+
+.avtitle p {
+    margin: 0;
+   color: hsl(212, 23%, 69%);
+   font-size: 13px;
+   
+}
+
+.share{
+  display: inline-block; 
+  background-color: hsla(217, 19%, 35%, 0.662); 
+  padding: 10px; 
+  border-radius: 50%; 
+  width: 40px;
+  text-align: center; 
+  line-height: 0; 
+}
+
+.share-icon {
+  width: 100%; 
+  height: auto; /* Maintains aspect ratio */
+  filter: brightness(0) invert(1);
+}
+.share {
+  position: relative;
+  display: inline-block;
+}
+
+.open {
+  display: none;
+  position: absolute;
+  bottom: 150%; /* Position above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: hsl(217, 19%, 35%);
+  padding: 20px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  border-radius: 9px;
+  color: hsl(212, 23%, 69%);
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+
+}
+.open::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* Position the arrow at the bottom of the tooltip */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+}
+
+.share:hover .open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.open img {
+  margin: 0 6px;
+  margin-left: 10px; /* Adjust spacing between images */
+}
+.card{
+  border-radius: 15px;
+  height: 260px;
+  
+}
+
+
+
